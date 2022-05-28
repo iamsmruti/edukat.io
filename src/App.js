@@ -71,7 +71,7 @@ function App() {
       <Router>
         <Layout cartItems={cartItems}>
           <Routes>
-            <Route path='/' exact element={<Home courses={courses}/>} />
+            <Route path='/' exact element={<Home cartItems={cartItems} handleAddItem={handleAddItem} courses={courses}/>} />
             <Route path='/course-list' exact element={<CourseList cartItems={cartItems} handleAddItem={handleAddItem} courses={courses}/>} />
             <Route path='/student-registration' exact element={<StudentReg />} />
             <Route path='/instructor-registration' exact element={<InstructorReg />} />

@@ -1,14 +1,29 @@
-import { AppBar, Toolbar, Typography, Button, Box, IconButton, List, ListItem, ListItemText, ListItemButton } from "@mui/material";
-import logo from '../images/2.png'
-import { useState } from 'react'
-import { useNavigate } from "react-router-dom";
+// Material UI Components
+import { 
+    SwipeableDrawer, 
+    AppBar, 
+    Toolbar, 
+    Typography, 
+    Button, 
+    Box, 
+    IconButton, 
+    List, 
+    ListItem, 
+    ListItemText, 
+    ListItemButton 
+} from "@mui/material";
+
+// Material Icons
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
+
+// React Components
+import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
+
+// Custom Components
 import Dropdown from "./Dropdown";
-
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-
-import { useCart } from "react-use-cart";
+import logo from '../images/2.png'
 
 const menuItems = [
     {
@@ -63,61 +78,42 @@ const MoreItems = [
     }
 ]
 
-const Appbar = ({cartItems}) => {
+const Appbar = ({ cartItems }) => {
     const navigate = useNavigate()
     const [state, setState] = useState(false)
 
-    const {
-        isEmpty,
-        totalUniqueItems,
-        items,
-        updateItemQuantity,
-        removeItem,
-      } = useCart();
-    
-
     const drawer = (
-        <>
-            <Box
-                className="sideMenu"
-                sx={{ width: 250 }}
-                role="presentation"
-                onClick={() => setState(true)}
-                onKeyDown={() => setState(false)}
-            >
-                <List>
-                    {menuItems.map((item) => (
-                         item.path === '#' ?
-                         (
-                             item.text === 'More' ? <Dropdown text={item.text} items={MoreItems} /> : <Dropdown text={item.text} items={RegistrationItems} />
-                         ) : (
-                        <ListItem key={item} disablePadding>
-                            <ListItemButton
-                                onClick={() => navigate(item.path)}
-                            >
-                                <ListItemText sx={{ml: 2}} primary={item.text} />
-                            </ListItemButton>
-                        </ListItem>
+        <Box
+            className="sideMenu"
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={() => setState(true)}
+            onKeyDown={() => setState(false)}
+        >
+            <List>
+                {menuItems.map((item) => (
+                    item.path === '#' ?
+                        (
+                            item.text === 'More' ? <Dropdown text={item.text} items={MoreItems} /> : <Dropdown text={item.text} items={RegistrationItems} />
+                        ) : (
+                            <ListItem key={item} disablePadding>
+                                <ListItemButton
+                                    onClick={() => navigate(item.path)}
+                                >
+                                    <ListItemText sx={{ ml: 2 }} primary={item.text} />
+                                </ListItemButton>
+                            </ListItem>
                         )
-                    ))}
-                </List>
-            </Box></>
+                ))}
+            </List>
+        </Box>
     )
 
     return (
         <div>
             <AppBar>
-                <Toolbar
-                    sx={{
-                        justifyContent: 'space-between'
-                    }}
-                >
-                    <IconButton
-                        sx={{
-                            display: { xs: 'flex', md: 'none' }
-                        }}
-                        onClick={() => setState(true)}
-                    >
+                <Toolbar sx={{ justifyContent: 'space-between' }}>
+                    <IconButton sx={{ display: { xs: 'flex', md: 'none' } }} onClick={() => setState(true)}>
                         <MenuIcon />
                     </IconButton>
 

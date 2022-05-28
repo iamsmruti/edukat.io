@@ -8,7 +8,7 @@ import Caraousal from "../../comps/Caraousel";
 import PopularCategories from "./parts/PopularCategories";
 import Stats from "./parts/Stats";
 
-const Home = ({courses}) => {
+const Home = ({courses, handleAddItem, cartItems}) => {
     return (
         <>
             <HeroSection />
@@ -51,9 +51,9 @@ const Home = ({courses}) => {
                 </Container>
             </Box>
 
-            <Caraousal courses={courses} />
-            <Caraousal courses={courses} />
-            <Caraousal courses={courses} />
+            <Caraousal handleAddItem={handleAddItem} cartItems={cartItems} courses={courses} />
+            <Caraousal handleAddItem={handleAddItem} cartItems={cartItems} courses={courses} />
+            <Caraousal handleAddItem={handleAddItem} cartItems={cartItems} courses={courses} />
 
             <PopularCategories />
             <Stats />

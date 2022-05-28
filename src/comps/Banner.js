@@ -28,7 +28,7 @@ const Banner = ({heading, check}) => {
                 {check ? <Typography
                     variant="body1"
                     sx={{
-                        width: 450,
+                        maxWidth: 450,
                         textAlign: 'center',
                         mb: 2,
                         color: grey[300]

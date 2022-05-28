@@ -1,7 +1,7 @@
 import { Container, Grid, Typography } from '@mui/material';
 import CourseCard from './CourseCard';
 
-const Caraousal = ({courses}) => {
+const Caraousal = ({courses, handleAddItem, cartItems}) => {
     return (
         <>
             <Container>
@@ -23,7 +23,7 @@ const Caraousal = ({courses}) => {
                     flexWrap: 'nowrap'
                 }} container>
                 {courses.map((course) => 
-                    <Grid m={3} minWidth={280} item md={3} sm={2} xs={1}><CourseCard course={course} /></Grid>
+                    <Grid m={3} minWidth={280} item md={3} sm={2} xs={1}><CourseCard cartItems={cartItems} handleAddItem={handleAddItem} course={course} /></Grid>
                 )}
                 </Grid>
                 

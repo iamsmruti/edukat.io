@@ -1,10 +1,15 @@
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import {
+    Card, 
+    CardContent, 
+    CardMedia, 
+    Button, 
+    Typography
+} from '@mui/material';
+
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
 import asset1 from '../images/asset1.webp'
+
 import { useNavigate } from 'react-router-dom';
 
 const BlogPost = ({ post }) => {
