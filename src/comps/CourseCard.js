@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Avatar, Box, Divider } from '@mui/material';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-import courseIcon from '../images/asset1.jpg'
+import courseIcon from '../images/asset1.webp'
 import PersonIcon from '@mui/icons-material/Person';
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';

@@ -2,11 +2,10 @@ import { Grid, Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import Banner from '../../comps/Banner'
 import FeatureCard from '../../comps/FeatureCard';
-import asset3 from '../../images/asset3.jpg'
+import asset3 from '../../images/asset3.webp'
 
 import InstructorCard from '../../comps/InstructorCard';
 
-import { useState, useEffect } from 'react';
 const About = ({instructors}) => {
     return (
         <>

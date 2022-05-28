@@ -1,7 +1,5 @@
 import { Grid } from '@mui/material';
-import { Container, Paper, Typography } from '@mui/material';
-import { grey, purple } from '@mui/material/colors';
-import { useState, useEffect } from 'react'
+import { Container } from '@mui/material';
 import Banner from '../../comps/Banner';
 import InstructorCard from '../../comps/InstructorCard';
 

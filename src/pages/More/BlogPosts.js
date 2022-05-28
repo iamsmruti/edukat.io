@@ -1,5 +1,4 @@
 import Banner from '../../comps/Banner'
-import { useState, useEffect } from 'react'
 import { Grid, Container } from '@mui/material';
 import BlogPost from '../../comps/BlogPost';
 

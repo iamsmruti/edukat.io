@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import { IconButton } from '@mui/material';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
-import { Translate } from '@mui/icons-material';
 
 export default function Notif() {
     const [anchorEl, setAnchorEl] = React.useState(null);

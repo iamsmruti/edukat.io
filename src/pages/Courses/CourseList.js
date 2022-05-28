@@ -5,7 +5,7 @@ import {
 } from "@mui/material";
 import FuzzySearch from 'fuzzy-search';
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import CourseCard from "../../comps/CourseCard";
 import FilterComp from "../../comps/FilterComp";
 

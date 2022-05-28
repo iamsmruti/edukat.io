@@ -1,5 +1,5 @@
 import { Container, Grid, Paper, Typography, Button, ButtonGroup } from "@mui/material";
-import { grey, blue } from "@mui/material/colors";
+import { grey } from "@mui/material/colors";
 import logo from '../images/2.png'
 import '../App.css'
 

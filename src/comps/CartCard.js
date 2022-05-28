@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-import asset1 from '../images/asset1.jpg'
+import asset1 from '../images/asset1.webp'
 import { useNavigate } from 'react-router-dom';
 import { Grid, Box, Button } from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';

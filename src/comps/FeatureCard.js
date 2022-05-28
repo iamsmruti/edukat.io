@@ -1,4 +1,4 @@
-import {Grid, Paper, Typography} from '@mui/material'
+import { Paper, Typography} from '@mui/material'
 import { blue, grey } from '@mui/material/colors';
 import { Box } from '@mui/system';
 import SmartToyIcon from '@mui/icons-material/SmartToy';

@@ -2,10 +2,9 @@ import { Button, Grid, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import { Box, Container } from "@mui/system";
 import HeroSection from "./parts/HeroSection";
-import asset3 from '../../images/asset3.jpg'
+import asset3 from '../../images/asset3.webp'
 import Caraousal from "../../comps/Caraousel";
 
-import { useState, useEffect } from 'react'
 import PopularCategories from "./parts/PopularCategories";
 import Stats from "./parts/Stats";
 
