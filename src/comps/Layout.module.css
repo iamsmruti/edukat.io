@@ -1,0 +1,8 @@
+.root{
+    display: flex;
+    flex-direction: column;
+}
+
+.children{
+    margin-top: 80px;
+}
